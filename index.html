@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+		
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/styleSheet2.css">
+        <meta charset="utf-8">
+    	<title>SnakeMania</title>
+    	<meta name="description" content="catch the food and survive!">
+    	<meta name="author" content="niyou">
+	</head>
+	
+	<body>
+		
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+  				 var js, fjs = d.getElementsByTagName(s)[0];
+ 				 if (d.getElementById(id)) return;
+ 				 js = d.createElement(s); js.id = id;
+			     js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  				 fjs.parentNode.insertBefore(js, fjs);
+				 }(document, 'script', 'facebook-jssdk'));
+		</script>
+		
+		
+		<div id= "title">
+			<h1>Snake Mania <h3 align="right" style="color:white">by Hicham Hammouche</h3></h1>
+			
+		</div>
+		
+		<div id= "gameContainer">
+			
+			
+			<div id= "loading">
+				<h2> Loading...</h2>
+			</div>
+			
+			<div id= "menu">
+				<a class="start" href="#">Play</a>
+				<a class="instruction" href="#">Instructions</a>
+				<a class="score" href="#">High Scores</a>
+			</div>
+			
+			<canvas id= "game" width= "500" height="500">
+				Get FireFox or Google Chrome, Internet Explorer is far outdated!
+			</canvas>
+			
+			
+			<div id= "gameOver">
+				<span id="GOScore"></span></br>
+				<span id="highestScore"></span>
+				<h2> Game Over</h2>
+				
+				<a class="start" href="#"> Play Again</a>
+				<a class="score" href="#"> High scores</a>
+				<a class="menu" href="#">Back to the Menu</a>
+			</div>
+			
+			<div id= "instructions">
+				<h2> Instructions</h2>
+				<p>Survive the longest by avoiding the enemy snakes and yourself!</p>
+				<p>PowerUps:</p>
+				<p>Green: kills all your enemies</p>
+				<p>Orange: Life up</p>
+				<p>blue: reduces your size</p>
+				<p>Controls: Keyboard arrows to move your snake!</p>
+				<a class="menu" href="#">Back to the Menu</a>
+			</div>
+			
+			<div id= "highScores">
+				<span id ="HS"></span>
+				<a class="menu" href="#">Back to the Menu</a>
+			</div>
+			
+			
+			
+		</div>
+		<div class="fb-like" data-href="http://www.snake-mania.com" data-send="true" data-width="450" data-show-faces="false" data-colorscheme="dark"></div>
+		<!-- Audio -->
+		<audio id="mainMusic" loop>
+			<source src="sound/8bitBG.mp3" type="audio/mp3"/>
+			
+		</audio>
+		<audio id="food">
+			<source src="sound/food.wav" type="audio/wav"/>
+			
+		</audio> 
+		
+		<audio id="soundGameOver">
+			<source src="sound/gameOver.mp3" type="audio/mp3"/>
+			
+		</audio>
+		<audio id="soundLifeUp">
+			<source src="sound/lifeUp.mp3" type="audio/mp3"/>
+			
+		</audio>
+		<audio id="soundReduceSize">
+			<source src="sound/reduceSize.mp3" type="audio/mp3"/>
+			
+		</audio>
+		<audio id="soundKillEnemies">
+			<source src="sound/killEnemies.mp3" type="audio/mp3"/>
+			
+		</audio>
+		<audio id="soundHurt">
+			<source src="sound/hurt.mp3" type="audio/mp3"/>
+			
+		</audio>
+	</body>
+	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="http://code.createjs.com/easeljs-0.5.0.min.js"></script>
+    <script src="js/game.js"></script>
+	
+</html>

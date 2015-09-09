@@ -1,0 +1,45 @@
+#gameContainer
+{
+	position: absolute;
+	width:500px;
+	height:500px;
+	top:100px;
+	left:300px;
+	z-index:0;
+	background-color:#0B486B;
+	/*background-color:#000000;*/
+	
+}
+#menu 
+{
+	position: absolute;
+	width:500px;
+	height:500px;
+	top:100px;
+	left:300px;
+	z-index: 1;
+	background-color:#0B486B;
+	/*background-color:#000000;*/
+}
+#title
+{
+	position: relative;
+	top:0px;
+	left:100px;
+	font-family: "impact";
+	font-size: 30px;
+	margin-bottom: 0px;
+}
+#content
+{
+	position:relative;
+	top:-10px;
+	left:170px;
+	
+	
+}
+p{
+	
+	font-family: "impact";
+	font-size: 35px;
+}
